@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  description: 'Product api '
+  title: Product
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /:
+    get:
+      operationId: rootGET
+      responses:
+        "200":
+          description: 200 response
+      summary: List API
+      x-eov-operation-handler: controllers/DefaultController
+components:
+  schemas: {}
