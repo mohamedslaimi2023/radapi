@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  description: commande api test
+  title: commande
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /commande/get:
+    get:
+      operationId: getPet
+      responses:
+        "200":
+          description: created successfully
+        "404":
+          description: error while getting pet
+      x-eov-operation-handler: controllers/DefaultController
+components:
+  schemas: {}
